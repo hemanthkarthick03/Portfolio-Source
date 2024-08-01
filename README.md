@@ -26,3 +26,7 @@ In this course, you'll dive into the following topics:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/portfolio-project.git
+
+2. NPM Installer Code:
+   ```bash
+   npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-do
