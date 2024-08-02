@@ -24,7 +24,6 @@ import {
   jobit,
   tripguide,
   threejs,
-  logo,
   forage,
   c1,
   c2,
@@ -32,6 +31,7 @@ import {
   evault,
   youtubeProject,
   phpsms,
+  typescript,
 } from "../assets";
 
 export const navLinks = [
@@ -41,7 +41,7 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
   },
   {
     id: "contact",
@@ -85,10 +85,10 @@ const technologies = [
     name: "HTML",
     icon: html,
   },
-  {
-    name: "CSS",
-    icon: css,
-  },
+  // {
+  //   name: "CSS",
+  //   icon: css,
+  // },
   {
     name: "JavaScript",
     icon: javascript,
@@ -125,10 +125,10 @@ const technologies = [
     name: "Git",
     icon: git,
   },
-  {
-    name: "Solidity",
-    icon: figma,
-  },
+  // {
+  //   name: "Solidity",
+  //   icon: figma,
+  // },
 ];
 
 const experiences = [

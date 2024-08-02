@@ -7,11 +7,6 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-//service_0zxvfz4,
-//template_ovr2jyd,
-//mkqnIbkfXRF-ABpKj
-
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -23,13 +18,8 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    //const { target } = e;
     const { name, value } = e.target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
+    setForm({ ...form, [name]: value });
   };
 
   const handleSubmit = (e) => {
@@ -39,7 +29,7 @@ const Contact = () => {
     emailjs
       .send(
         'service_0zxvfz4',
-        "template_ovr2jyd",
+        'template_tpequlu',
         {
           from_name: form.name,
           to_name: "Hemanth Karthick",
@@ -47,7 +37,7 @@ const Contact = () => {
           to_email: "hemanthkarthick03@gmail.com",
           message: form.message,
         },
-        "89qjuaWLSBu41Dyrf"
+        'RmwU19fXxXLaVxnpY'
       )
       .then(
         () => {
@@ -58,36 +48,26 @@ const Contact = () => {
             name: "",
             email: "",
             message: "",
-          })
+          });
         },
         (error) => {
           setLoading(false);
-
-          console.error(error);
-
+          console.error("EmailJS Error:", error);
           alert("Ahh, something went wrong. Please try again.");
         }
       );
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <div className="animate-pulse animate-infinite">
-          <h3 className={styles.sectionHeadText}>Contact.</h3>
-        </div>
+        <h3 className={`${styles.sectionHeadText} animate-pulse`}>Contact.</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
+        <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
@@ -142,3 +122,4 @@ const Contact = () => {
 };
 
 export default SectionWrapper(Contact, "contact");
+
