@@ -6,17 +6,18 @@ import { ComputersCanvas } from './canvas';
 const Hero = () => {
   return (
     <section className={'relative w-full h-screen mx-auto'}>
-      <div className={'${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5'}>
-        <div className='flex flex-col justify-center items-center mt-5'>
+      <div className={'${styles.paddingX} absolute inset-0 top-[175px] max-w-7xl mx-auto flex flex-row items-start gap-5'}>
+        <div className='flex flex-col mt-4 justify-center items-center mr-3'>
           <div className='w-5 h-5 rounded-full bg-[#b84848]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+          <div className='w-1 sm:h-80 h-80 violet-gradient' />
         </div>
 
-        <div class="animate-bounce animate-infinite h-6">
-          <h2 className={`${styles.heroHeadText} text-white`}>Hello, I'm <span className='text-[#ff5e5e]'>Hemanth</span></h2>
-          <p className={`${styles.heroSubText} mt-2 text-white-98`}>Data Science Enthusiast <br className='sm:hidden' />| Blockchain Developer <br className='sm:hidden' />|<br /> React Developer | <br className='sm:hidden' /></p>
+        <div class="animate-bounce animate-infinite h-5">
+          <h2 className={`${styles.heroHeadText} text-white`}><span className='text-[#f74848]'>Hemanth<br /></span>Karthick</h2>
+          <p className={`${styles.heroSubText} mt-2 text-white-98`}>Software Developer 👨‍💻🖥️<br className='sm:hidden' /> <br /> AI & LLM Engineer 🤖👨‍🔧<br className='sm:hidden' /><br /> Web Developer 🌐🎨 <br className='sm:hidden' /></p>
+
         </div> 
-        <ComputersCanvas />
+        {/* <ComputersCanvas /> */}
 
         <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
           <a href='#about'>
