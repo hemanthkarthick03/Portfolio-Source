@@ -85,10 +85,6 @@ const technologies = [
     name: "HTML",
     icon: html,
   },
-  // {
-  //   name: "CSS",
-  //   icon: css,
-  // },
   {
     name: "JavaScript",
     icon: javascript,
@@ -100,10 +96,6 @@ const technologies = [
   {
     name: "C++",
     icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Java",

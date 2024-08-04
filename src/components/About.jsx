@@ -24,31 +24,40 @@ const About = () => {
     <>
       <motion.div>
       <br /><br />
-        <div class="animate-flip-up">
-        <p className={styles.heroSubText }>Introduction</p>
-        <div class="animate-pulse animate-infinite">
-        <h2 className={styles.heroHeadText}>Overview</h2>
+        <div className='p-10'>
+          <div class="animate-flip-up">
+          <p className={styles.heroSubText }>Introduction</p>
+            <div class="animate-pulse animate-infinite">
+            <h2 className={styles.heroHeadText}>Overview</h2>
+            </div>
+          </div>  
         </div>
-        </div>
+
       </motion.div>
-      <motion.p variants={fadeIn("","",0.1,1)} className="mt-4 text-secondary
+      <motion.p variants={fadeIn("","",0.1,1)} className="p-10 mt-4 text-secondary
       text-[16px] max-w-6xl leading-[32px] ">
-      <br/>
       <ol>
-      <li>👔 Ambitious and passionate about learning cutting-edge technologies.</li>
+      <li>👔 Ambitious software developer passionate about leveraging technology to solve real-world problems.</li>
       <br />
-      <li>🧠 Fast and independent learner with keen interest in Deep Learning, Blockchain, Data Science, Machine Learning Algorithms, and Analytics.</li>
+      <li>📚 Proficient in training large language models (LLMs) using LangChain with LLaMA and other Hugging Face models.</li>
       <br />
-      <li>🧑🏻‍💻 Experienced in utilizing IBM Watson, Pandas, Seaborn, and Microsoft Excel for data analytics.</li>
+      <li>🧠 Fast and independent learner with a strong interest in AI, Machine Learning, Blockchain, and Data Science.</li>
       <br />
-      <li>💡 Skilled in programming languages such as C, C++, JAVA, Python, JavaScript, SQL, React, and Ethereum.</li>
+      <li>🧑🏻‍💻 Experienced in developing applications using Python, Java, C/C++, and JavaScript, with hands-on experience in AWS cloud solutions.</li>
       <br />
-      <li>🏆 Awarded prizes for presenting innovative ideas in paper presentations and project displays at events and hackathons.</li>
+      <li>💡 Proficient in creating data-driven solutions using tools like Scikit-Learn, Pandas, TensorFlow, and MongoDB.</li>
       <br />
+      <li>🌐 Developed and deployed web applications, enhancing user experience and optimizing performance.</li>
+      <br />
+      <li>🏆 Recognized for innovative projects in hackathons and competitions, including AI and Blockchain-based solutions.</li>
+      <br />
+      <li>📊 Skilled in data analysis, machine learning model development, and predictive analytics to drive business insights.</li>
+      <br />
+      <li>📈 Continuously expanding knowledge in deep learning, natural language processing, and advanced data science techniques.</li>
       </ol>
       </motion.p>
       
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="p-10 mt-20 flex flex-wrap gap-10">
         {services.map((service, index)=>(
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

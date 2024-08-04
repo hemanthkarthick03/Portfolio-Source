@@ -5,13 +5,13 @@ import { ComputersCanvas } from './canvas';
 const Hero = () => {
   return (
     <section className='relative w-full h-screen mx-auto'>
-      <div className={`${styles.paddingX} absolute inset-0 top-[175px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
+      <div className={`${styles.paddingX} absolute inset-0 top-[175px] max-w-7xl mx-auto flex flex-row items-start gap-2`}>
         <div className='flex flex-col mt-4 justify-center items-center mr-3'>
           <div className='w-5 h-5 rounded-full bg-[#6C63FF]' /> {/* Light Purple */}
-          <div className='w-1 sm:h-80 h-80 bg-gradient-to-b from-[#6C63FF] to-[#B48FF8]' /> {/* Light Purple to Pink Gradient */}
+          <div className='w-1 sm:h-80 h-40 bg-gradient-to-b from-[#6C63FF] to-[#B48FF8]' /> {/* Light Purple to Pink Gradient */}
         </div>
 
-        <div className="animate-bounce animate-infinite h-5">
+        <div className="flex flex-col items-start animate-bounce animate-infinite h-10">
           <h2 className={`${styles.heroHeadText} text-white`}>
             <span className='text-[#FFD700]'>Hemanth<br /></span>Karthick {/* Gold */}
           </h2>
