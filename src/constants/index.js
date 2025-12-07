@@ -125,6 +125,36 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Specialist Programmer - Agentic AI",
+    company_name: "Infosys Ltd.",
+    icon: langchain,
+    iconBg: "#E6DEDD",
+    date: "August 2025 - Present",
+    points: [
+      "Designed and implemented end-to-end AI workflows using LangChain, LangGraph, and Google ADK with robust guardrails and observability powered by LangFuse.",
+      "Integrated A2A Protocol and Model Context Protocol (MCP) for secure, modular, and interoperable agent communication within AI systems.",
+      "Developed and deployed two complete capstone projects, including an AI-driven Invoice Auditor for automated document analysis and validation."
+    ],
+  },
+  {
+  "title": "Programmer Analyst Trainee",
+  "company_name": "Cognizant",
+  "icon": backend,
+  "iconBg": "#E6DEDD",
+  "date": "March 2025 - June 2025",
+  "points": [
+    "Trained as a PEGA BPM System Architect with hands-on experience in building enterprise-grade workflow applications.",
+    "Designed and configured Case Management solutions including routing logic, SLAs, and escalation mechanisms.",
+    "Implemented Activities, Data Transforms, Decision Rules, and Declarative Rules for business logic automation.",
+    "Created UI components such as Sections and Harness layouts to deliver user-friendly and scalable application interfaces.",
+    "Integrated external services using REST and SOAP APIs for seamless system communication.",
+    "Developed validation rules, access control policies, and reusable rule components to ensure security and maintainability.",
+    "Worked with reporting tools, Tracer, and Debugger for application monitoring and issue resolution.",
+    "Collaborated in Agile development cycles, contributing to deployment, testing, and iterative enhancement."
+  ],
+  "skills": ["Java", "API Management", "Spring MVC", "Maven", "PEGA BPM"]
+  },
+  {
     title: "AWS Cloud & Web Developer Intern",
     company_name: "Finecons Pvt. Ltd.",
     icon: finecons,
