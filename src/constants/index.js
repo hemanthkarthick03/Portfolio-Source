@@ -125,6 +125,18 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Balamurugan",
+    company_name: "Finecons Pvt. Ltd.",
+    icon: finecons,
+    iconBg: "#E6DEDD",
+    date: "June 2024 - August 2024",
+    points: [
+      "Developed and maintained websites for both college and company projects, ensuring they were user-friendly and met all functional requirements.",
+      "Implemented responsive designs to ensure optimal viewing across various devices.",
+      "Implemented cloud solutions to optimize performance, including cost-effective resource allocation and effective load balancing.",
+    ],
+  },
+  {
     title: "AWS Cloud & Web Developer Intern",
     company_name: "Finecons Pvt. Ltd.",
     icon: finecons,
