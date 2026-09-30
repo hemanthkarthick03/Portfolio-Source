@@ -16,37 +16,40 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
+        background: "#151622",
         color: "#fff",
+        border: "1px solid rgba(255, 255, 255, 0.1)",
+        boxShadow: "0 18px 45px rgba(0, 0, 0, 0.18)",
       }}
-      contentArrowStyle={{ borderRight: "7px solid #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid #151622" }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      dateClassName="text-secondary"
+      iconStyle={{
+        background: experience.iconBg,
+        border: "4px solid #10111a",
+        boxShadow: "0 0 0 1px rgba(141, 228, 207, 0.45)",
+      }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
-          />
+          <img src={experience.icon} alt="" className='h-[58%] w-[58%] object-contain' />
         </div>
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className='text-white text-xl font-bold leading-snug'>{experience.title}</h3>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className='mt-1 text-sm font-medium text-[#8de4cf]'
           style={{ margin: 0 }}
         >
           {experience.company_name}
         </p>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className='mt-5 ml-5 list-disc space-y-2 marker:text-[#8de4cf]'>
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            className='pl-1 text-sm leading-6 text-white/80'
           >
             {point}
           </li>
@@ -61,12 +64,10 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
+          Selected experience
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          <div class="animate-pulse animate-infinite">
-          Intern Experience
-          </div>
+        <h2 className={`${styles.sectionHeadText} mt-2 text-center`}>
+          Experience<span className="text-[#8de4cf]">.</span>
         </h2>
       </motion.div>
 

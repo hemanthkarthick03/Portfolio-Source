@@ -3,6 +3,7 @@ import c1 from "./1.png";
 import c2 from "./2.png";
 import c3 from "./3.png";
 import carrent from "./carrent.png";
+import cognizant from "./company/cognizant.png";
 import close from "./close.svg";
 import IBM from "./ibm_logo.png";
 import creator from "./creator.png";
@@ -15,6 +16,7 @@ import forage from "./forage.png";
 import git from "./tech/git.png";
 import github from "./github.png";
 import html from "./tech/html.png";
+import iitm from "./certificates/iitm.png";
 import infy from "./company/infy.png";
 import javascript from "./tech/javascript.png";
 import jobit from "./jobit.png";
@@ -47,6 +49,7 @@ export {
   c3,
   carrent,
   close,
+  cognizant,
   creator,
   css,
   docker,
@@ -58,6 +61,7 @@ export {
   github,
   html,
   IBM,
+  iitm,
   infy,
   javascript,
   jobit,

@@ -1,37 +1,79 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
+import { fadeIn, staggerContainer } from '../utils/motion';
 import { ComputersCanvas } from './canvas';
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto'>
-      <div className={`${styles.paddingX} absolute inset-0 top-[175px] max-w-7xl mx-auto flex flex-row items-start gap-2`}>
-        <div className='flex flex-col mt-4 justify-center items-center mr-3'>
-          <div className='w-5 h-5 rounded-full bg-[#6C63FF]' /> {/* Light Purple */}
-          <div className='w-1 sm:h-80 h-40 bg-gradient-to-b from-[#6C63FF] to-[#B48FF8]' /> {/* Light Purple to Pink Gradient */}
-        </div>
-
-        <div className="flex flex-col items-start animate-bounce animate-infinite h-10">
-          <h2 className={`${styles.heroHeadText} text-white`}>
-            <span className='text-[#FFD700]'>Hemanth<br /></span>Karthick {/* Gold */}
-          </h2>
-          <p className={`${styles.heroSubText} mt-2 text-[#D3D3D3]`}> {/* Light Gray */}
-            Software Developer 👨‍💻🖥️<br className='sm:hidden' /> <br />
-            AI & LLM Engineer 🤖👨‍🔧<br className='sm:hidden' /><br />
-            Web Developer 🌐🎨 <br className='sm:hidden' />
-          </p>
-        </div> 
-
+    <section className="relative mx-auto h-screen min-h-[640px] w-full overflow-hidden">
+      <div className="absolute inset-0 z-0">
         <ComputersCanvas />
+      </div>
 
-        <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-          <a href='#about'>
-            <div className='w-[35px] h-[64px] rounded-3xl border-4 border-[#FFD700] flex justify-center items-start p-2'> {/* Gold Border */}
-              <motion.div animate={{ y: [0, 24, 0] }} transition={{ duration: 1.5, repeat: Infinity, repeatType: 'loop' }} className='w-3 h-3 rounded-full bg-[#FFD700] mb-1' /> {/* Gold */}
-            </div>
-          </a>
+      <div className={`${styles.paddingX} absolute inset-0 top-[150px] z-10 mx-auto max-w-7xl`}>
+        <div className="flex items-start gap-3 sm:gap-5">
+          <div className="mt-4 flex flex-col items-center">
+            <span className="h-3 w-3 rounded-full bg-[#8de4cf] shadow-[0_0_18px_rgba(141,228,207,0.7)]" />
+            <span className="h-40 w-px bg-gradient-to-b from-[#8de4cf] via-[#8de4cf]/40 to-transparent sm:h-64" />
+          </div>
+
+          <motion.div
+            variants={staggerContainer(0.12, 0.08)}
+            initial="hidden"
+            animate="show"
+            className="max-w-2xl"
+          >
+            <motion.p
+              variants={fadeIn('up', 'tween', 0, 0.55)}
+              className="font-mono text-xs text-[#8de4cf] sm:text-sm"
+            >
+              SOFTWARE / AI / WEB
+            </motion.p>
+            <motion.h1
+              variants={fadeIn('up', 'tween', 0, 0.65)}
+              className={`${styles.heroHeadText} mt-3 text-white`}
+            >
+              Hemanth<br />
+              <span className="text-[#8de4cf]">Karthick.</span>
+            </motion.h1>
+            <motion.p
+              variants={fadeIn('up', 'tween', 0, 0.65)}
+              className={`${styles.heroSubText} mt-4 max-w-xl text-[#d3d3d3]`}
+            >
+              I build useful digital experiences with software, data, and AI.
+            </motion.p>
+            <motion.div
+              variants={fadeIn('up', 'tween', 0, 0.55)}
+              className="mt-7 flex flex-wrap items-center gap-3"
+            >
+              <a
+                href="#work"
+                className="rounded-lg bg-[#8de4cf] px-5 py-3 text-sm font-semibold text-[#10141a] transition-colors hover:bg-white"
+              >
+                Explore my work
+              </a>
+              <a
+                href="#contact"
+                className="rounded-lg border border-white/20 px-5 py-3 text-sm font-semibold text-white transition-colors hover:border-[#8de4cf] hover:text-[#8de4cf]"
+              >
+                Get in touch
+              </a>
+            </motion.div>
+          </motion.div>
         </div>
-      </div> 
+      </div>
+
+      <a
+        href="#about"
+        aria-label="Scroll to introduction"
+        className="absolute bottom-8 left-1/2 z-10 flex h-14 w-8 -translate-x-1/2 items-start justify-center rounded-full border border-white/30 p-2 transition-colors hover:border-[#8de4cf]"
+      >
+        <motion.span
+          animate={{ y: [0, 22, 0] }}
+          transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
+          className="h-2 w-2 rounded-full bg-[#8de4cf]"
+        />
+      </a>
     </section>
   );
 };

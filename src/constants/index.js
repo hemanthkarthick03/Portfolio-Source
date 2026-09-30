@@ -4,6 +4,7 @@ import {
   c2,
   c3,
   carrent,
+  cognizant,
   creator,
   css,
   docker,
@@ -14,6 +15,7 @@ import {
   git,
   html,
   IBM,
+  iitm,
   infy,
   javascript,
   jobit,
@@ -52,20 +54,24 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Software Developer",
+    title: "Software Development",
     icon: mobile,
+    description: "Web apps and cloud tools built for real use.",
   },
   {
-    title: "AI & LangChain Engineer",
+    title: "AI & LLMs",
     icon: backend,
+    description: "LLM workflows, machine learning, and applied AI.",
   },
   {
-    title: "Blockchain & Web3 Enthusiast",
+    title: "Blockchain & Web3",
     icon: creator,
+    description: "Decentralized technology explored through projects.",
   },
   {
-    title: "Web Designer",
+    title: "Web Design",
     icon: web,
+    description: "Responsive interfaces with clarity and usability.",
   }
 ];
 
@@ -142,12 +148,12 @@ const experiences = [
     ],
   },
   {
-    "title": "Programmer Analyst Trainee",
-    "company_name": "Cognizant Technology Solutions ",
-    "icon": backend,
-    "iconBg": "#E6DEDD",
-    "date": "March 2025 - June 2025",
-    "points": [
+    title: "Programmer Analyst Trainee",
+    company_name: "Cognizant Technology Solutions ",
+    icon: cognizant,
+    iconBg: "#E6DEDD",
+    date: "March 2025 - June 2025",
+    points: [
       "Trained as a PEGA BPM System Architect with hands-on experience in building enterprise-grade workflow applications.",
       "Designed and configured Case Management solutions including routing logic, SLAs, and escalation mechanisms.",
       "Implemented Activities, Data Transforms, Decision Rules, and Declarative Rules for business logic automation.",
@@ -212,6 +218,10 @@ const experiences = [
 
 const testimonials = [
   {
+    testimonial: "B.S. - IIT Madras - Data Science Foundations Certificate",
+    image: iitm,
+  },
+  {
     testimonial: "Google Data Analytics Professional Certificate",
     image: c1,
   },
@@ -219,10 +229,7 @@ const testimonials = [
     testimonial: "IBM Data Science Specialization",
     image: c2,
   },
-  {
-    testimonial: "Databases and SQL for Data Science with Python (Honours) - IBM",
-    image: c3,
-  },
+  
 ];
 
 const projects = [
