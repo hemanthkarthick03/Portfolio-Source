@@ -1,37 +1,38 @@
 import {
-  mobile,
   backend,
-  creator,
-  web,
-  javascript,
-  html,
-  css,
-  finecons,
-  postgresql,
-  langchain,
-  reactjs,
-  python,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  IBM,
-  lgm,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
-  forage,
   c1,
   c2,
   c3,
+  carrent,
+  creator,
+  css,
+  docker,
   evault,
-  youtubeProject,
+  figma,
+  finecons,
+  forage,
+  git,
+  html,
+  IBM,
+  infy,
+  javascript,
+  jobit,
+  langchain,
+  lgm,
+  mobile,
+  mongodb,
+  nodejs,
   phpsms,
+  postgresql,
+  python,
+  reactjs,
+  redux,
+  tailwind,
+  threejs,
+  tripguide,
   typescript,
+  web,
+  youtubeProject,
 } from "../assets";
 
 export const navLinks = [
@@ -127,32 +128,36 @@ const experiences = [
   {
     title: "Specialist Programmer - Agentic AI",
     company_name: "Infosys Ltd.",
-    icon: langchain,
+    icon: infy,
     iconBg: "#E6DEDD",
     date: "August 2025 - Present",
     points: [
-      "Designed and implemented end-to-end AI workflows using LangChain, LangGraph, and Google ADK with robust guardrails and observability powered by LangFuse.",
-      "Integrated A2A Protocol and Model Context Protocol (MCP) for secure, modular, and interoperable agent communication within AI systems.",
-      "Developed and deployed two complete capstone projects, including an AI-driven Invoice Auditor for automated document analysis and validation."
+      "Designed and implemented end-to-end AI workflows using LangChain, LangGraph, and Google ADK, incorporating robust guardrails and LangFuse-powered observability.",
+      "Integrated the A2A Protocol and Model Context Protocol (MCP) to enable secure, modular, and interoperable communication between AI agents and systems.",
+      "Took ownership of designing and developing a query-rewrite optimization pipeline using RAGAS to improve retrieval quality and answer relevance.",
+      "Built a Risk Analysis API using Retrieval-Augmented Generation (RAG) to identify and assess applicable risks from relevant knowledge sources.",
+      "Developed high-performance AI solutions engineered to support production load, concurrent requests, and API rate-limit requirements.",
+      "Implemented LangFuse observability and tracing to monitor AI workflows, evaluate performance, and support reliable debugging.",
+      "Developed and deployed two end-to-end capstone projects, including an AI-driven Invoice Auditor for automated document analysis and validation."
     ],
   },
   {
-  "title": "Programmer Analyst Trainee",
-  "company_name": "Cognizant",
-  "icon": backend,
-  "iconBg": "#E6DEDD",
-  "date": "March 2025 - June 2025",
-  "points": [
-    "Trained as a PEGA BPM System Architect with hands-on experience in building enterprise-grade workflow applications.",
-    "Designed and configured Case Management solutions including routing logic, SLAs, and escalation mechanisms.",
-    "Implemented Activities, Data Transforms, Decision Rules, and Declarative Rules for business logic automation.",
-    "Created UI components such as Sections and Harness layouts to deliver user-friendly and scalable application interfaces.",
-    "Integrated external services using REST and SOAP APIs for seamless system communication.",
-    "Developed validation rules, access control policies, and reusable rule components to ensure security and maintainability.",
-    "Worked with reporting tools, Tracer, and Debugger for application monitoring and issue resolution.",
-    "Collaborated in Agile development cycles, contributing to deployment, testing, and iterative enhancement."
-  ],
-  "skills": ["Java", "API Management", "Spring MVC", "Maven", "PEGA BPM"]
+    "title": "Programmer Analyst Trainee",
+    "company_name": "Cognizant Technology Solutions ",
+    "icon": backend,
+    "iconBg": "#E6DEDD",
+    "date": "March 2025 - June 2025",
+    "points": [
+      "Trained as a PEGA BPM System Architect with hands-on experience in building enterprise-grade workflow applications.",
+      "Designed and configured Case Management solutions including routing logic, SLAs, and escalation mechanisms.",
+      "Implemented Activities, Data Transforms, Decision Rules, and Declarative Rules for business logic automation.",
+      "Created UI components such as Sections and Harness layouts to deliver user-friendly and scalable application interfaces.",
+      "Integrated external services using REST and SOAP APIs for seamless system communication.",
+      "Developed validation rules, access control policies, and reusable rule components to ensure security and maintainability.",
+      "Worked with reporting tools, Tracer, and Debugger for application monitoring and issue resolution.",
+      "Collaborated in Agile development cycles, contributing to deployment, testing, and iterative enhancement."
+    ],
+    "skills": ["Java", "API Management", "Spring MVC", "Maven", "PEGA BPM"]
   },
   {
     title: "AWS Cloud & Web Developer Intern",
@@ -221,54 +226,54 @@ const testimonials = [
 ];
 
 const projects = [
-    {
-      name: "Naruto: Virtual Voice Assistance with LlaMa3 and Computer Vision",
-      description: "Integrated various APIs with Meta Llama3 to control screen brightness and volume using hand gestures recognized by OpenCV and TensorFlow to improve user interaction.",
-      tags: [
-        {
-          name: "python",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "langchain",
-          color: "green-text-gradient",
-        },
-        {
-          name: "opencv",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/phoenix-mp3/VVA-LLM",
-    },
-    {
-      name: "YouTube Data Harvesting and Warehousing",
-      description: "The YouTube Data Harvesting and Warehousing project is designed to empower users to access and analyze data from various YouTube channels.",
-      tags: [
-        {
-          name: "Python",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "MongoDB",
-          color: "green-text-gradient",
-        },
-        {
-          name: "PostgreSQL",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "Streamlit",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Youtube Data API",
-          color: "green-text-gradient",
-        }
-      ],
-      image: youtubeProject,
-      source_code_link: "https://github.com/phoenix-mp3/Youtube-Data-Warehousing-Streamlit",
-    },
+  {
+    name: "Naruto: Virtual Voice Assistance with LlaMa3 and Computer Vision",
+    description: "Integrated various APIs with Meta Llama3 to control screen brightness and volume using hand gestures recognized by OpenCV and TensorFlow to improve user interaction.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "langchain",
+        color: "green-text-gradient",
+      },
+      {
+        name: "opencv",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/phoenix-mp3/VVA-LLM",
+  },
+  {
+    name: "YouTube Data Harvesting and Warehousing",
+    description: "The YouTube Data Harvesting and Warehousing project is designed to empower users to access and analyze data from various YouTube channels.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Streamlit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Youtube Data API",
+        color: "green-text-gradient",
+      }
+    ],
+    image: youtubeProject,
+    source_code_link: "https://github.com/phoenix-mp3/Youtube-Data-Warehousing-Streamlit",
+  },
   {
     name: "Healthchain: Medical Records Management System using Blockchain",
     description: "Integrated a Medical Record Managing Dapp with the Ganache Provider which stores the records entered into the Ethereum Private Blockchain using Contracts and MetaMask Digital Wallet.",
@@ -313,7 +318,7 @@ const projects = [
     image: evault,
     source_code_link: "https://github.com/phoenix-mp3/E-Vault-Web3.js",
   },
-  
+
   {
     name: "PHP - Sales Management System",
     description: "A robust web application for managing sales data, built with PHP and MySQL. It features a user-friendly form for data entry, validation, and secure insertion into a PostgreSQL database.",
