@@ -1,14 +1,12 @@
-import React from 'react';
-
 const Resume = () => {
   return (
-    <div className="resume-download">
-      <a href="/Resume.pdf" download>
-        <button className="px-6 py-1 bg-red-500 text-white rounded-full hover:bg-red-600 transition duration-300">
-          Download Resume
-        </button>
-      </a>
-    </div>
+    <a
+      href="/Resume.pdf"
+      download
+      className="inline-flex items-center rounded-lg border border-[#8de4cf]/40 bg-[#8de4cf]/10 px-4 py-2 text-sm font-semibold text-[#8de4cf] transition-colors hover:bg-[#8de4cf] hover:text-[#10141a]"
+    >
+      Download Resume
+    </a>
   );
 };
 

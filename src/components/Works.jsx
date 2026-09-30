@@ -7,6 +7,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import SectionEyebrow from "./SectionEyebrow";
 
 const Tilt = TiltModule.default;
 
@@ -75,7 +76,7 @@ const Works = () => {
       <div className="p-10">
         <motion.div variants={textVariant()}>
           <br /><br />
-          <p className={`${styles.sectionSubText} `}>My work</p>
+          <SectionEyebrow label="Projects" number="04" />
           <div class="animate-pulse animate-infinite">
             <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
           </div>
