@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+import SectionEyebrow from "./SectionEyebrow";
 
 const FeedbackCard = ({
   index,
@@ -50,7 +51,7 @@ const Feedbacks = () => {
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}></p>
+          <SectionEyebrow label="Certifications" number="05" />
           <div class="animate-pulse animate-infinite">
             <h2 className={styles.sectionHeadText}>Certifications</h2>
           </div>

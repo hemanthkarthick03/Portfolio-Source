@@ -4,6 +4,7 @@ import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import SectionEyebrow from './SectionEyebrow';
 
 const Tilt = TiltModule.default;
 
@@ -46,7 +47,7 @@ const About = () => {
       <motion.div variants={textVariant(0.05)}>
         <div className="grid gap-5 border-b border-white/10 pb-7 md:grid-cols-[minmax(0,1fr)_minmax(260px,0.8fr)] md:items-end">
           <div>
-            <p className="font-mono text-xs text-[#8de4cf]">ABOUT / 01</p>
+            <SectionEyebrow label="About" number="01" />
             <h2 className={`${styles.sectionHeadText} mt-2`}>
               Overview<span className="text-[#8de4cf]">.</span>
             </h2>

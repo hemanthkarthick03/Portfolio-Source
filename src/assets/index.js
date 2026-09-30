@@ -20,7 +20,7 @@ import git from "./tech/git.png";
 import github from "./github.png";
 import html from "./tech/html.png";
 import iitm from "./certificates/iitm.png";
-import infy from "./company/infy.png";
+import infy from "./company/infy.jpg";
 import javascript from "./tech/javascript.png";
 import jobit from "./jobit.png";
 import langchain from "./tech/langchain.png";

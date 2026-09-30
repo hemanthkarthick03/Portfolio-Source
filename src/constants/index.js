@@ -41,6 +41,10 @@ import {
   youtubeProject,
 } from "../assets";
 
+// =====================================================
+// NAVIGATION
+// =====================================================
+
 export const navLinks = [
   {
     id: "about",
@@ -56,28 +60,42 @@ export const navLinks = [
   },
 ];
 
+
+// =====================================================
+// SERVICES
+// =====================================================
+
 const services = [
+  {
+    title: "AI Engineering",
+    icon: backend,
+    description:
+      "Building AI applications with LLMs, RAG, LangChain, and LangGraph, while designing agentic AI systems using MCP, A2A, workflow orchestration, tool integration, and AI observability.",
+  },
   {
     title: "Software Development",
     icon: mobile,
-    description: "Web apps and cloud tools built for real use.",
+    description:
+      "Developing scalable web applications, APIs, and backend systems using modern software development technologies.",
   },
   {
-    title: "AI & LLMs",
-    icon: backend,
-    description: "LLM workflows, machine learning, and applied AI.",
-  },
-  {
-    title: "Blockchain & Web3",
+    title: "Blockchain Development",
     icon: creator,
-    description: "Decentralized technology explored through projects.",
+    description:
+      "Building decentralized applications using blockchain, Ethereum, Solidity, smart contracts, and Web3 technologies.",
   },
   {
-    title: "Web Design",
+    title: "Cloud Engineering",
     icon: web,
-    description: "Responsive interfaces with clarity and usability.",
-  }
+    description:
+      "Building and deploying reliable cloud-based applications with AWS, Docker, APIs, and scalable backend services.",
+  },
 ];
+
+
+// =====================================================
+// TECHNOLOGIES
+// =====================================================
 
 const technologies = [
   {
@@ -113,7 +131,7 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Java",
+    name: "Docker",
     icon: docker,
   },
   {
@@ -124,139 +142,215 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-
   {
     name: "LangFuse",
     icon: langfuse,
-  }
+  },
 ];
+
+
+// =====================================================
+// EXPERIENCE
+// =====================================================
 
 const experiences = [
   {
-    title: "Specialist Programmer - Agentic AI",
+    title: "Specialist Programmer - AI Full Stack Engineer",
     company_name: "Infosys Ltd.",
     icon: infy,
     iconBg: "#E6DEDD",
     date: "August 2025 - Present",
+
     points: [
-      "Designed and implemented end-to-end AI workflows using LangChain, LangGraph, and Google ADK, incorporating robust guardrails and LangFuse-powered observability.",
-      "Integrated the A2A Protocol and Model Context Protocol (MCP) to enable secure, modular, and interoperable communication between AI agents and systems.",
-      "Took ownership of designing and developing a query-rewrite optimization pipeline using RAGAS to improve retrieval quality and answer relevance.",
-      "Built a Risk Analysis API using Retrieval-Augmented Generation (RAG) to identify and assess applicable risks from relevant knowledge sources.",
-      "Developed high-performance AI solutions engineered to support production load, concurrent requests, and API rate-limit requirements.",
-      "Implemented LangFuse observability and tracing to monitor AI workflows, evaluate performance, and support reliable debugging.",
-      "Developed and deployed two end-to-end capstone projects, including an AI-driven Invoice Auditor for automated document analysis and validation."
+      "Designing AI applications and workflows using LangChain, LangGraph, and Google ADK.",
+      "Working on AI architecture using A2A and MCP to connect agents, tools, and external systems.",
+      "Built RAG solutions including a query-rewrite pipeline with RAGAS and a Contract Risk Analysis pipeline.",
+      "Built production-ready APIs with support for concurrent requests, rate limits, monitoring, and reliable error handling.",
+    ],
+
+    skills: [
+      "LangChain",
+      "LangGraph",
+      "Google ADK",
+      "RAG",
+      "RAGAS",
+      "MCP",
+      "A2A",
+      "LangFuse",
     ],
   },
+
   {
     title: "Programmer Analyst Trainee",
-    company_name: "Cognizant Technology Solutions ",
+    company_name: "Cognizant Technology Solutions",
     icon: cognizant,
     iconBg: "#E6DEDD",
     date: "March 2025 - June 2025",
+
     points: [
-      "Trained as a PEGA BPM System Architect with hands-on experience in building enterprise-grade workflow applications.",
-      "Designed and configured Case Management solutions including routing logic, SLAs, and escalation mechanisms.",
-      "Implemented Activities, Data Transforms, Decision Rules, and Declarative Rules for business logic automation.",
-      "Created UI components such as Sections and Harness layouts to deliver user-friendly and scalable application interfaces.",
-      "Integrated external services using REST and SOAP APIs for seamless system communication.",
-      "Developed validation rules, access control policies, and reusable rule components to ensure security and maintainability.",
-      "Worked with reporting tools, Tracer, and Debugger for application monitoring and issue resolution.",
-      "Collaborated in Agile development cycles, contributing to deployment, testing, and iterative enhancement."
+      "Trained as a PEGA BPM System Architect and worked on enterprise workflow applications.",
+      "Configured case routing, SLAs, escalations, business rules, validations, and access controls.",
+      "Built reusable UI components and connected external systems using REST and SOAP APIs.",
+      "Used PEGA debugging and reporting tools while working through development, testing, and deployment.",
     ],
-    "skills": ["Java", "API Management", "Spring MVC", "Maven", "PEGA BPM"]
+
+    skills: [
+      "PEGA BPM",
+      "Java",
+      "REST API",
+      "SOAP",
+      "Maven",
+      "Spring MVC",
+    ],
   },
+
   {
     title: "AWS Cloud & Web Developer Intern",
     company_name: "Finecons Pvt. Ltd.",
     icon: finecons,
     iconBg: "#E6DEDD",
     date: "June 2024 - August 2024",
+
     points: [
-      "Developed and maintained websites for both college and company projects, ensuring they were user-friendly and met all functional requirements.",
-      "Implemented responsive designs to ensure optimal viewing across various devices.",
-      "Implemented cloud solutions to optimize performance, including cost-effective resource allocation and effective load balancing.",
+      "Developed websites for college and company projects based on project requirements.",
+      "Built responsive interfaces that worked across desktop, tablet, and mobile devices.",
+      "Worked with AWS services to improve application performance and manage cloud resources.",
+    ],
+
+    skills: [
+      "AWS",
+      "Web Development",
+      "JavaScript",
+      "HTML",
+      "CSS",
     ],
   },
+
   {
     title: "Data Science Intern",
     company_name: "LetsGrowMore",
     icon: lgm,
     iconBg: "#E6DEDD",
     date: "June 2023 - July 2023",
+
     points: [
-      "A supervised machine learning approach that utilizes the random forest algorithm to accurately classify iris flowers based on their features.",
-      "A music recommendation system using machine learning analyzes user preferences and behavior to suggest personalized music playlists and tracks based on their listening history.",
-      "Developed a stock prediction system using machine learning to analyze historical stock data and predict future price movements.",
+      "Built machine learning projects for iris classification, music recommendations, and stock data analysis.",
+      "Prepared datasets and applied machine learning techniques to build and test prediction models.",
+      "Worked with Python and common data science libraries for data analysis and visualization.",
+    ],
+
+    skills: [
+      "Python",
+      "Machine Learning",
+      "Pandas",
+      "NumPy",
+      "Data Analysis",
     ],
   },
+
   {
     title: "Virtual Internship Programs",
     company_name: "Forage",
     icon: forage,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "January 2022 - January 2023",
+
     points: [
-      "Data Visualisation: Empowering Business with Effective Insights",
-      "Accenture Developer Program",
-      "Accenture - Data analytics & visualization",
+      "Completed virtual work experience programs focused on software development, data analytics, and data visualization.",
+      "Worked through practical tasks based on real-world business and technology scenarios.",
+    ],
+
+    skills: [
+      "Data Analytics",
+      "Data Visualization",
+      "Software Development",
     ],
   },
+
   {
     title: "Data Analytics Intern",
-    company_name: "IBM Skillsbuild",
+    company_name: "IBM SkillsBuild",
     icon: IBM,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "January 2023",
+
     points: [
-      "Cleaning and handling missing data in datasets using Numpy and Pandas functions.",
-      "Exploring datasets using Pandas to get insights into the data's structure and content.",
-      "Creating basic visualizations using libraries like Matplotlib or Seaborn to understand data patterns.",
-      "Performing statistical analysis using Numpy functions to understand data distributions and relationships.",
+      "Cleaned and prepared datasets using Python, NumPy, and Pandas.",
+      "Explored datasets to understand patterns, trends, and data quality.",
+      "Created visualizations and performed basic statistical analysis to support data-driven insights.",
+    ],
+
+    skills: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Data Visualization",
     ],
   },
 ];
+
+
+// =====================================================
+// CERTIFICATIONS
+// =====================================================
 
 const testimonials = [
   {
-    testimonial: "B.S. - IIT Madras - Data Science Foundations Certificate",
+    testimonial:
+      "B.S. in Data Science and Applications - IIT Madras",
     image: iitm,
   },
   {
-    testimonial: "Google Data Analytics Professional Certificate",
+    testimonial:
+      "Google Data Analytics Professional Certificate",
     image: c1,
   },
   {
-    testimonial: "IBM Data Science Specialization",
+    testimonial:
+      "IBM Data Science Specialization",
     image: c2,
   },
-  
 ];
+
+
+// =====================================================
+// PROJECTS
+// =====================================================
 
 const projects = [
   {
-    name: "Naruto: Virtual Voice Assistance with LlaMa3 and Computer Vision",
-    description: "Integrated various APIs with Meta Llama3 to control screen brightness and volume using hand gestures recognized by OpenCV and TensorFlow to improve user interaction.",
+    name: "Naruto: Virtual Voice Assistant with Llama 3 and Computer Vision",
+
+    description:
+      "A voice assistant that uses Llama 3, LangChain, and computer vision to control system functions such as volume and screen brightness using voice commands and hand gestures.",
+
     tags: [
       {
-        name: "python",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "langchain",
+        name: "LangChain",
         color: "green-text-gradient",
       },
       {
-        name: "opencv",
+        name: "OpenCV",
         color: "pink-text-gradient",
       },
     ],
+
     image: tripguide,
-    source_code_link: "https://github.com/phoenix-mp3/VVA-LLM",
+
+    source_code_link:
+      "https://github.com/phoenix-mp3/VVA-LLM",
   },
+
   {
     name: "YouTube Data Harvesting and Warehousing",
-    description: "The YouTube Data Harvesting and Warehousing project is designed to empower users to access and analyze data from various YouTube channels.",
+
+    description:
+      "A data platform that collects YouTube channel data, stores it in MongoDB and PostgreSQL, and provides an interface for exploring and analyzing the collected data.",
+
     tags: [
       {
         name: "Python",
@@ -275,94 +369,139 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "Youtube Data API",
+        name: "YouTube API",
         color: "green-text-gradient",
-      }
+      },
     ],
+
     image: youtubeProject,
-    source_code_link: "https://github.com/phoenix-mp3/Youtube-Data-Warehousing-Streamlit",
-  },
-  {
-    name: "Healthchain: Medical Records Management System using Blockchain",
-    description: "Integrated a Medical Record Managing Dapp with the Ganache Provider which stores the records entered into the Ethereum Private Blockchain using Contracts and MetaMask Digital Wallet.",
-    tags: [
-      {
-        name: "blockchain",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ethereum",
-        color: "green-text-gradient",
-      },
-      {
-        name: "solidity",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/phoenix-mp3/Healthcare-Management-System",
-  },
-  {
-    name: "Blockchain-based eVault for Legal Records",
-    description: "User-friendly React-based dashboard for accessing, searching, and managing legal documents with enhanced security features.",
-    tags: [
-      {
-        name: "blockchain",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ethereum",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: evault,
-    source_code_link: "https://github.com/phoenix-mp3/E-Vault-Web3.js",
+
+    source_code_link:
+      "https://github.com/phoenix-mp3/Youtube-Data-Warehousing-Streamlit",
   },
 
   {
-    name: "PHP - Sales Management System",
-    description: "A robust web application for managing sales data, built with PHP and MySQL. It features a user-friendly form for data entry, validation, and secure insertion into a PostgreSQL database.",
+    name: "HealthChain: Medical Records Management System",
+
+    description:
+      "A blockchain-based application for securely managing medical records using Ethereum smart contracts and MetaMask.",
+
     tags: [
       {
-        name: "blockchain",
+        name: "Blockchain",
         color: "blue-text-gradient",
       },
       {
-        name: "ethereum",
+        name: "Ethereum",
         color: "green-text-gradient",
       },
       {
-        name: "solidity",
+        name: "Solidity",
         color: "pink-text-gradient",
       },
     ],
-    image: phpsms,
-    source_code_link: "https://github.com/phoenix-mp3/PHP-Sales-System",
+
+    image: jobit,
+
+    source_code_link:
+      "https://github.com/phoenix-mp3/Healthcare-Management-System",
   },
+
   {
-    name: "FractureDot: AI-Driven Bone Fracture Detection for Rapid Diagnosis",
-    description: "An advanced project aims to use artificial intelligence to develop a system capable of accurately detecting bone fractures in medical images.",
+    name: "Blockchain-based eVault for Legal Records",
+
+    description:
+      "A React-based application for securely storing, accessing, searching, and managing legal documents using blockchain technology.",
+
     tags: [
       {
-        name: "datascience",
+        name: "Blockchain",
         color: "blue-text-gradient",
       },
       {
-        name: "neuralnetworks",
+        name: "Ethereum",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+    ],
+
+    image: evault,
+
+    source_code_link:
+      "https://github.com/phoenix-mp3/E-Vault-Web3.js",
+  },
+
+  {
+    name: "PHP Sales Management System",
+
+    description:
+      "A web application for managing sales records with data entry, validation, and database operations using PHP and PostgreSQL.",
+
+    tags: [
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
         color: "pink-text-gradient",
       },
     ],
+
+    image: phpsms,
+
+    source_code_link:
+      "https://github.com/phoenix-mp3/PHP-Sales-System",
+  },
+
+  {
+    name: "FractureDot: AI Bone Fracture Detection",
+
+    description:
+      "An AI-based system designed to detect bone fractures from medical images and support faster analysis of X-ray scans.",
+
+    tags: [
+      {
+        name: "Data Science",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Machine Learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Neural Networks",
+        color: "pink-text-gradient",
+      },
+    ],
+
     image: carrent,
-    source_code_link: "https://github.com/phoenix-mp3/bone-fracture-detection",
+
+    source_code_link:
+      "https://github.com/phoenix-mp3/bone-fracture-detection",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+
+// =====================================================
+// EXPORT
+// =====================================================
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+};

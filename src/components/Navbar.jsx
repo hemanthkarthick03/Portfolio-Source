@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Resume from './Resume';
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { github, logo, menu, close } from "../assets";
 import { staggerContainer } from "../utils/motion";
 
 const navVariant = {
@@ -17,6 +17,11 @@ const menuVariant = {
   visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.2 } },
   exit: { opacity: 0, y: -8, scale: 0.98, transition: { duration: 0.15 } },
 };
+
+const socialLinks = [
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/hemanth-karthick-03/" },
+  { label: "GitHub", href: "https://github.com/phoenix-mp3" },  
+];
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -49,7 +54,7 @@ const Navbar = () => {
           variants={staggerContainer(0.08, 0.12)}
           initial="hidden"
           animate="visible"
-          className="hidden list-none flex-row items-center gap-8 sm:flex"
+          className="hidden list-none flex-row items-center gap-4 md:gap-6 sm:flex"
         >
           {navLinks.map((nav) => (
             <motion.li
@@ -76,6 +81,27 @@ const Navbar = () => {
           <li>
             <Resume />
           </li>
+          {socialLinks.map((social) => (
+            <li key={social.label}>
+              <a
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+                title={social.label}
+                className="grid h-10 w-10 place-items-center rounded-full border border-white/10 text-secondary transition-colors hover:border-[#8de4cf]/60 hover:text-white"
+              >
+                {social.label === "GitHub" ? (
+                  <img src={github} alt="" className="h-5 w-5 object-contain" />
+                ) : (
+                  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 fill-current">
+                    <circle cx="5.5" cy="6" r="1.75" />
+                    <path d="M4 9h3v11H4zM10 9h3v1.5c.8-1.1 1.9-1.8 3.5-1.8 3 0 3.5 1.9 3.5 4.4V20h-3v-6c0-1.4-.2-2.5-1.8-2.5-1.5 0-2.2 1-2.2 2.5V20h-3z" />
+                  </svg>
+                )}
+              </a>
+            </li>
+          ))}
         </motion.ul>
 
         <div className="relative flex items-center sm:hidden">
@@ -116,6 +142,27 @@ const Navbar = () => {
                   <li className="border-t border-white/10 pt-4">
                     <Resume />
                   </li>
+                  {socialLinks.map((social) => (
+                    <li key={social.label}>
+                      <a
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={social.label}
+                        title={social.label}
+                        className="grid h-10 w-10 place-items-center rounded-full border border-white/10 text-secondary transition-colors hover:border-[#8de4cf]/60 hover:text-white"
+                      >
+                        {social.label === "GitHub" ? (
+                          <img src={github} alt="" className="h-5 w-5 object-contain" />
+                        ) : (
+                          <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 fill-current">
+                            <circle cx="5.5" cy="6" r="1.75" />
+                            <path d="M4 9h3v11H4zM10 9h3v1.5c.8-1.1 1.9-1.8 3.5-1.8 3 0 3.5 1.9 3.5 4.4V20h-3v-6c0-1.4-.2-2.5-1.8-2.5-1.5 0-2.2 1-2.2 2.5V20h-3z" />
+                          </svg>
+                        )}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </motion.div>
             )}
