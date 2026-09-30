@@ -19,8 +19,8 @@ const menuVariant = {
 };
 
 const socialLinks = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/hemanth-karthick-03/" },
-  { label: "GitHub", href: "https://github.com/phoenix-mp3" },  
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/hemanth-karthick/" },
+  { label: "GitHub", href: "https://github.com/hemanthkarthick03" },  
 ];
 
 const Navbar = () => {

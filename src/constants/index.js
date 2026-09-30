@@ -342,7 +342,7 @@ const projects = [
     image: tripguide,
 
     source_code_link:
-      "https://github.com/phoenix-mp3/VVA-LLM",
+      "https://github.com/hemanthkarthick03/VVA-LLM",
   },
 
   {
@@ -377,7 +377,7 @@ const projects = [
     image: youtubeProject,
 
     source_code_link:
-      "https://github.com/phoenix-mp3/Youtube-Data-Warehousing-Streamlit",
+      "https://github.com/hemanthkarthick03/Youtube-Data-Warehousing-Streamlit",
   },
 
   {
@@ -404,7 +404,7 @@ const projects = [
     image: jobit,
 
     source_code_link:
-      "https://github.com/phoenix-mp3/Healthcare-Management-System",
+      "https://github.com/hemanthkarthick03/Healthcare-Management-System",
   },
 
   {
@@ -435,7 +435,7 @@ const projects = [
     image: evault,
 
     source_code_link:
-      "https://github.com/phoenix-mp3/E-Vault-Web3.js",
+      "https://github.com/hemanthkarthick03/E-Vault-Web3.js",
   },
 
   {
@@ -462,7 +462,7 @@ const projects = [
     image: phpsms,
 
     source_code_link:
-      "https://github.com/phoenix-mp3/PHP-Sales-System",
+      "https://github.com/hemanthkarthick03/PHP-Sales-System",
   },
 
   {
@@ -489,7 +489,7 @@ const projects = [
     image: carrent,
 
     source_code_link:
-      "https://github.com/phoenix-mp3/bone-fracture-detection",
+      "https://github.com/hemanthkarthick03/Bone-Fracture",
   },
 ];
 
