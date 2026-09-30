@@ -1,4 +1,7 @@
 import {
+  aws,
+  fastapi,
+  graphql,
   backend,
   c1,
   c2,
@@ -20,6 +23,7 @@ import {
   javascript,
   jobit,
   langchain,
+  langfuse,
   lgm,
   mobile,
   mongodb,
@@ -77,6 +81,18 @@ const services = [
 
 const technologies = [
   {
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "FastAPI",
+    icon: fastapi,
+  },
+  {
+    name: "GraphQL",
+    icon: graphql,
+  },
+  {
     name: "Python",
     icon: python,
   },
@@ -89,20 +105,12 @@ const technologies = [
     icon: postgresql,
   },
   {
-    name: "HTML",
-    icon: html,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "C++",
-    icon: redux,
   },
   {
     name: "Java",
@@ -116,18 +124,11 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
+
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "Git",
-    icon: git,
-  },
-  // {
-  //   name: "Solidity",
-  //   icon: figma,
-  // },
+    name: "LangFuse",
+    icon: langfuse,
+  }
 ];
 
 const experiences = [

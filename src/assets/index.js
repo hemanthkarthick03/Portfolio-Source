@@ -1,3 +1,6 @@
+import aws from "./tech/aws.png";
+import fastapi from "./tech/fastapi.png";
+import graphql from "./tech/graphql.png"
 import backend from "./backend.png";
 import c1 from "./1.png";
 import c2 from "./2.png";
@@ -29,7 +32,8 @@ import mobile from "./mobile.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import phpsms from "./phpsms.png";
-import postgresql from "./tech/postgresql.png";
+import postgresql from "./tech/pg.png";
+import langfuse from "./tech/langfuse.png";
 import python from "./tech/python.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
@@ -43,6 +47,9 @@ import web from "./web.png";
 import youtubeProject from "./YTProject.png";
 
 export {
+  aws,
+  fastapi,
+  graphql,
   backend,
   c1,
   c2,
@@ -66,6 +73,7 @@ export {
   javascript,
   jobit,
   langchain,
+  langfuse,
   lgm,
   logo,
   menu,
